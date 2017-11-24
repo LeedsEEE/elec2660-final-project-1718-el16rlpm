@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhysicalViewController : UIViewController
+@interface PhysicalViewController : UIViewController <UITextFieldDelegate>
 
+@property float weight;
+@property float height;
+@property float caloricIn;
+@property float BMI;
 
+- (IBAction)helpButton:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *BMILabel;
+@property (weak, nonatomic) IBOutlet UITextField *weightTextField;
+@property (weak, nonatomic) IBOutlet UITextField *heightTextField;
+@property (weak, nonatomic) IBOutlet UITextField *caloricInTextField;
+- (IBAction)backgroundPressed:(id)sender;
 @end
 
