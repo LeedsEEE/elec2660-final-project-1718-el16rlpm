@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20025ECA1FC85FFB00B59F64 /* physicalInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC41FC85FFB00B59F64 /* physicalInfo.png */; };
+		20025ECB1FC85FFB00B59F64 /* physicalInfo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC51FC85FFB00B59F64 /* physicalInfo@2x.png */; };
+		20025ECC1FC85FFB00B59F64 /* physicalInfo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC61FC85FFB00B59F64 /* physicalInfo@3x.png */; };
+		20025ECD1FC85FFB00B59F64 /* mapView.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC71FC85FFB00B59F64 /* mapView.png */; };
+		20025ECE1FC85FFB00B59F64 /* mapView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC81FC85FFB00B59F64 /* mapView@2x.png */; };
+		20025ECF1FC85FFB00B59F64 /* mapView@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC91FC85FFB00B59F64 /* mapView@3x.png */; };
 		20D51D301FC47E5300866E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D51D2F1FC47E5300866E0A /* main.m */; };
 		20D51D331FC47E5300866E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D51D321FC47E5300866E0A /* AppDelegate.m */; };
-		20D51D361FC47E5300866E0A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D51D351FC47E5300866E0A /* FirstViewController.m */; };
-		20D51D391FC47E5300866E0A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D51D381FC47E5300866E0A /* SecondViewController.m */; };
+		20D51D361FC47E5300866E0A /* PhysicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D51D351FC47E5300866E0A /* PhysicalViewController.m */; };
+		20D51D391FC47E5300866E0A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D51D381FC47E5300866E0A /* MapViewController.m */; };
 		20D51D3C1FC47E5300866E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D51D3A1FC47E5300866E0A /* Main.storyboard */; };
 		20D51D3E1FC47E5300866E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D51D3D1FC47E5300866E0A /* Assets.xcassets */; };
 		20D51D411FC47E5300866E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D51D3F1FC47E5300866E0A /* LaunchScreen.storyboard */; };
@@ -36,14 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20025EC41FC85FFB00B59F64 /* physicalInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = physicalInfo.png; path = ../../../Downloads/physicalInfo.png; sourceTree = "<group>"; };
+		20025EC51FC85FFB00B59F64 /* physicalInfo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "physicalInfo@2x.png"; path = "../../../Downloads/physicalInfo@2x.png"; sourceTree = "<group>"; };
+		20025EC61FC85FFB00B59F64 /* physicalInfo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "physicalInfo@3x.png"; path = "../../../Downloads/physicalInfo@3x.png"; sourceTree = "<group>"; };
+		20025EC71FC85FFB00B59F64 /* mapView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapView.png; path = ../../../Downloads/mapView.png; sourceTree = "<group>"; };
+		20025EC81FC85FFB00B59F64 /* mapView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapView@2x.png"; path = "../../../Downloads/mapView@2x.png"; sourceTree = "<group>"; };
+		20025EC91FC85FFB00B59F64 /* mapView@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapView@3x.png"; path = "../../../Downloads/mapView@3x.png"; sourceTree = "<group>"; };
 		20D51D2B1FC47E5300866E0A /* The Jogging App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Jogging App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D51D2F1FC47E5300866E0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20D51D311FC47E5300866E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20D51D321FC47E5300866E0A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		20D51D341FC47E5300866E0A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		20D51D351FC47E5300866E0A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		20D51D371FC47E5300866E0A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		20D51D381FC47E5300866E0A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		20D51D341FC47E5300866E0A /* PhysicalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicalViewController.h; sourceTree = "<group>"; };
+		20D51D351FC47E5300866E0A /* PhysicalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicalViewController.m; sourceTree = "<group>"; };
+		20D51D371FC47E5300866E0A /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		20D51D381FC47E5300866E0A /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		20D51D3B1FC47E5300866E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20D51D3D1FC47E5300866E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20D51D401FC47E5300866E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,14 +118,20 @@
 			children = (
 				20D51D311FC47E5300866E0A /* AppDelegate.h */,
 				20D51D321FC47E5300866E0A /* AppDelegate.m */,
-				20D51D341FC47E5300866E0A /* FirstViewController.h */,
-				20D51D351FC47E5300866E0A /* FirstViewController.m */,
-				20D51D371FC47E5300866E0A /* SecondViewController.h */,
-				20D51D381FC47E5300866E0A /* SecondViewController.m */,
+				20D51D341FC47E5300866E0A /* PhysicalViewController.h */,
+				20D51D351FC47E5300866E0A /* PhysicalViewController.m */,
+				20D51D371FC47E5300866E0A /* MapViewController.h */,
+				20D51D381FC47E5300866E0A /* MapViewController.m */,
 				20D51D3A1FC47E5300866E0A /* Main.storyboard */,
 				20D51D3D1FC47E5300866E0A /* Assets.xcassets */,
 				20D51D3F1FC47E5300866E0A /* LaunchScreen.storyboard */,
 				20D51D421FC47E5300866E0A /* Info.plist */,
+				20025EC41FC85FFB00B59F64 /* physicalInfo.png */,
+				20025EC51FC85FFB00B59F64 /* physicalInfo@2x.png */,
+				20025EC61FC85FFB00B59F64 /* physicalInfo@3x.png */,
+				20025EC71FC85FFB00B59F64 /* mapView.png */,
+				20025EC81FC85FFB00B59F64 /* mapView@2x.png */,
+				20025EC91FC85FFB00B59F64 /* mapView@3x.png */,
 				20D51D2E1FC47E5300866E0A /* Supporting Files */,
 			);
 			path = "The Jogging App";
@@ -251,9 +269,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20025ECA1FC85FFB00B59F64 /* physicalInfo.png in Resources */,
+				20025ECB1FC85FFB00B59F64 /* physicalInfo@2x.png in Resources */,
+				20025ECC1FC85FFB00B59F64 /* physicalInfo@3x.png in Resources */,
+				20025ECF1FC85FFB00B59F64 /* mapView@3x.png in Resources */,
 				20D51D411FC47E5300866E0A /* LaunchScreen.storyboard in Resources */,
+				20025ECE1FC85FFB00B59F64 /* mapView@2x.png in Resources */,
 				20D51D3E1FC47E5300866E0A /* Assets.xcassets in Resources */,
 				20D51D3C1FC47E5300866E0A /* Main.storyboard in Resources */,
+				20025ECD1FC85FFB00B59F64 /* mapView.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +302,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20D51D391FC47E5300866E0A /* SecondViewController.m in Sources */,
+				20D51D391FC47E5300866E0A /* MapViewController.m in Sources */,
 				20D51D331FC47E5300866E0A /* AppDelegate.m in Sources */,
-				20D51D361FC47E5300866E0A /* FirstViewController.m in Sources */,
+				20D51D361FC47E5300866E0A /* PhysicalViewController.m in Sources */,
 				20D51D301FC47E5300866E0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +537,7 @@
 				20D51D5D1FC47E5300866E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20D51D5E1FC47E5300866E0A /* Build configuration list for PBXNativeTarget "The Jogging AppTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +546,7 @@
 				20D51D601FC47E5300866E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20D51D611FC47E5300866E0A /* Build configuration list for PBXNativeTarget "The Jogging AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +555,7 @@
 				20D51D631FC47E5300866E0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

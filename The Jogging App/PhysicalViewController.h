@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  FirstViewController.h
 //  The Jogging App
 //
 //  Created by Ricardo Pereira Marques da Silva [el16rlpm] on 21/11/2017.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface PhysicalViewController : UIViewController
 
 
 @end
