@@ -12,14 +12,19 @@
 
 @property float weight;
 @property float height;
-@property float caloricIn;
+@property float age;
 @property float BMI;
+@property BOOL gender;
 
 - (IBAction)helpButton:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *BMILabel;
+@property (weak, nonatomic) IBOutlet UILabel *BMRLabel;
 @property (weak, nonatomic) IBOutlet UITextField *weightTextField;
 @property (weak, nonatomic) IBOutlet UITextField *heightTextField;
-@property (weak, nonatomic) IBOutlet UITextField *caloricInTextField;
-- (IBAction)backgroundPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *genderControl;
+@property (weak, nonatomic) IBOutlet UITextField *ageTextField;
+- (IBAction)genderChanged:(id)sender;
+
+
 @end
 

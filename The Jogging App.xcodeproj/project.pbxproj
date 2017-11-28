@@ -13,6 +13,7 @@
 		20025ECD1FC85FFB00B59F64 /* mapView.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC71FC85FFB00B59F64 /* mapView.png */; };
 		20025ECE1FC85FFB00B59F64 /* mapView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC81FC85FFB00B59F64 /* mapView@2x.png */; };
 		20025ECF1FC85FFB00B59F64 /* mapView@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC91FC85FFB00B59F64 /* mapView@3x.png */; };
+		203735811FCDB5EB003607CC /* Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 203735801FCDB5EB003607CC /* Calculations.m */; };
 		20D51D301FC47E5300866E0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D51D2F1FC47E5300866E0A /* main.m */; };
 		20D51D331FC47E5300866E0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D51D321FC47E5300866E0A /* AppDelegate.m */; };
 		20D51D361FC47E5300866E0A /* PhysicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D51D351FC47E5300866E0A /* PhysicalViewController.m */; };
@@ -42,12 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20025EC41FC85FFB00B59F64 /* physicalInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = physicalInfo.png; path = ../../../Downloads/physicalInfo.png; sourceTree = "<group>"; };
-		20025EC51FC85FFB00B59F64 /* physicalInfo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "physicalInfo@2x.png"; path = "../../../Downloads/physicalInfo@2x.png"; sourceTree = "<group>"; };
-		20025EC61FC85FFB00B59F64 /* physicalInfo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "physicalInfo@3x.png"; path = "../../../Downloads/physicalInfo@3x.png"; sourceTree = "<group>"; };
-		20025EC71FC85FFB00B59F64 /* mapView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapView.png; path = ../../../Downloads/mapView.png; sourceTree = "<group>"; };
-		20025EC81FC85FFB00B59F64 /* mapView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapView@2x.png"; path = "../../../Downloads/mapView@2x.png"; sourceTree = "<group>"; };
-		20025EC91FC85FFB00B59F64 /* mapView@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapView@3x.png"; path = "../../../Downloads/mapView@3x.png"; sourceTree = "<group>"; };
+		20025EC41FC85FFB00B59F64 /* physicalInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = physicalInfo.png; path = "../../Downloads/elec2660-final-project-1718-el16rlpm-master/The Jogging App/physicalInfo.png"; sourceTree = SOURCE_ROOT; };
+		20025EC51FC85FFB00B59F64 /* physicalInfo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "physicalInfo@2x.png"; path = "../../Downloads/elec2660-final-project-1718-el16rlpm-master/The Jogging App/physicalInfo@2x.png"; sourceTree = SOURCE_ROOT; };
+		20025EC61FC85FFB00B59F64 /* physicalInfo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "physicalInfo@3x.png"; path = "../../Downloads/elec2660-final-project-1718-el16rlpm-master/The Jogging App/physicalInfo@3x.png"; sourceTree = SOURCE_ROOT; };
+		20025EC71FC85FFB00B59F64 /* mapView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapView.png; path = "../../Downloads/elec2660-final-project-1718-el16rlpm-master/The Jogging App/mapView.png"; sourceTree = SOURCE_ROOT; };
+		20025EC81FC85FFB00B59F64 /* mapView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapView@2x.png"; path = "../../Downloads/elec2660-final-project-1718-el16rlpm-master/The Jogging App/mapView@2x.png"; sourceTree = SOURCE_ROOT; };
+		20025EC91FC85FFB00B59F64 /* mapView@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapView@3x.png"; path = "../../Downloads/elec2660-final-project-1718-el16rlpm-master/The Jogging App/mapView@3x.png"; sourceTree = SOURCE_ROOT; };
+		2037357F1FCDB5EB003607CC /* Calculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculations.h; sourceTree = "<group>"; };
+		203735801FCDB5EB003607CC /* Calculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculations.m; sourceTree = "<group>"; };
 		20D51D2B1FC47E5300866E0A /* The Jogging App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Jogging App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D51D2F1FC47E5300866E0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20D51D311FC47E5300866E0A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +123,8 @@
 				20D51D321FC47E5300866E0A /* AppDelegate.m */,
 				20D51D341FC47E5300866E0A /* PhysicalViewController.h */,
 				20D51D351FC47E5300866E0A /* PhysicalViewController.m */,
+				2037357F1FCDB5EB003607CC /* Calculations.h */,
+				203735801FCDB5EB003607CC /* Calculations.m */,
 				20D51D371FC47E5300866E0A /* MapViewController.h */,
 				20D51D381FC47E5300866E0A /* MapViewController.m */,
 				20D51D3A1FC47E5300866E0A /* Main.storyboard */,
@@ -305,6 +310,7 @@
 				20D51D391FC47E5300866E0A /* MapViewController.m in Sources */,
 				20D51D331FC47E5300866E0A /* AppDelegate.m in Sources */,
 				20D51D361FC47E5300866E0A /* PhysicalViewController.m in Sources */,
+				203735811FCDB5EB003607CC /* Calculations.m in Sources */,
 				20D51D301FC47E5300866E0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
