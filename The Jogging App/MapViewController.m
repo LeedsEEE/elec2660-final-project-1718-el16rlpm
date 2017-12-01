@@ -26,4 +26,15 @@
 }
 
 
+- (IBAction)mapViewButton:(UIButton *)sender {
+}
+
+- (IBAction)satelliteViewButton:(UIButton *)sender {
+}
+
+- (IBAction)hybridViewButton:(UIButton *)sender {
+}
+
+- (IBAction)mapViewSatellite:(UIButton *)sender {
+}
 @end

@@ -7,8 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) CLLocationManager *location;
+@property(nonatomic) MKMapType mapType;
+
+- (IBAction)mapViewButton:(UIButton *)sender;
+- (IBAction)satelliteViewButton:(UIButton *)sender;
+- (IBAction)hybridViewButton:(UIButton *)sender;
+
 
 
 @end
