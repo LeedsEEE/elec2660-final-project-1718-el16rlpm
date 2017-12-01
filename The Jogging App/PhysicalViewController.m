@@ -22,6 +22,7 @@
     self.weight = [self.weightTextField.text doubleValue];
     self.height = [self.heightTextField.text doubleValue];
     self.age = [self.ageTextField.text doubleValue];
+
 }
 
 

@@ -14,7 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) CLLocationManager *location;
-@property(nonatomic) MKMapType mapType;
+
 
 - (IBAction)mapViewButton:(UIButton *)sender;
 - (IBAction)satelliteViewButton:(UIButton *)sender;
