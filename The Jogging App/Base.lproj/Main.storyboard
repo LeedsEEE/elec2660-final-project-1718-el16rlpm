@@ -144,30 +144,52 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9do-2x-iVd"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlc-bG-jfh">
-                                <state key="normal" title="Map"/>
+                                <state key="normal" title="Map">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="mapViewButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="iVx-6E-v4j"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5j-4O-YCv">
-                                <state key="normal" title="Satellite"/>
+                                <state key="normal" title="Satellite">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="satelliteViewButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Msm-nW-VqN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ka6-2o-9wl">
-                                <state key="normal" title="Hybrid"/>
+                                <state key="normal" title="Hybrid">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="hybridViewButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="pAk-ar-h8e"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-lY-7Fq">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimated time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njh-Oz-wbx">
+                                <frame key="frameInset" minX="9" minY="146" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Qlc-bG-jfh" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="22" id="4dE-fD-Y8Y"/>
                             <constraint firstAttribute="bottomMargin" secondItem="9do-2x-iVd" secondAttribute="bottom" constant="38" id="5ec-3l-SW9"/>
+                            <constraint firstItem="wI8-lY-7Fq" firstAttribute="top" secondItem="Qlc-bG-jfh" secondAttribute="bottom" constant="51" id="Bac-A6-QTu"/>
                             <constraint firstItem="F5j-4O-YCv" firstAttribute="leading" secondItem="Qlc-bG-jfh" secondAttribute="trailing" constant="45" id="IhV-dO-KlK"/>
                             <constraint firstItem="Ka6-2o-9wl" firstAttribute="leading" secondItem="F5j-4O-YCv" secondAttribute="trailing" constant="45" id="OM8-5a-Qo5"/>
+                            <constraint firstItem="wI8-lY-7Fq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-7" id="YdL-et-ZvN"/>
                             <constraint firstAttribute="trailing" secondItem="9do-2x-iVd" secondAttribute="trailing" id="g4v-4u-PZl"/>
                             <constraint firstItem="9do-2x-iVd" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="iao-VB-MxW"/>
                             <constraint firstItem="F5j-4O-YCv" firstAttribute="baseline" secondItem="Ka6-2o-9wl" secondAttribute="baseline" id="lC2-Ay-ifn"/>
@@ -179,7 +201,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map View" image="mapView.png" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="distanceLabel" destination="wI8-lY-7Fq" id="4Uj-ZL-7Fy"/>
                         <outlet property="mapView" destination="9do-2x-iVd" id="gLb-fa-VKg"/>
+                        <outlet property="timeLabel" destination="njh-Oz-wbx" id="Bv3-14-yCT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

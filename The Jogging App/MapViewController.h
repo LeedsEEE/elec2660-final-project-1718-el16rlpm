@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) CLLocationManager *location;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 
 
 - (IBAction)mapViewButton:(UIButton *)sender;

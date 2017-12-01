@@ -37,35 +37,19 @@
     [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:alertController animated:YES completion:nil];
 }
-/*- (IBAction)onSegmentValueChanged:(UISegmentedControl *)sender {
- UISegmentedControl *seg = (UISegmentedControl *)sender;
- if (seg.selectedSegmentIndex == 0) {
- self.gender = 0;
- }
- else {
- self.gender = 1;
- }
- if (self.age != 0) {
- Calculations *c=[[Calculations alloc] init];
- ;
- [self.BMRLabel setText:[NSString stringWithFormat:@"BMR: %.1f", [c setBMR: self.height: self.weight: self.age: self.gender]]];
- NSLog(@"BMR: %.1f", [c setBMR: self.height: self.weight: self.age: self.gender]);
- }
- }*/
+
 
 
 #pragma mark Text Field Delegates
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     
-    //:if ([self.weightTextField isFirstResponder]) {
+
     self.weight = [self.weightTextField.text doubleValue];
-    //:}
-    //:if ([self.heightTextField isFirstResponder]) {
+
     self.height = [self.heightTextField.text doubleValue];
-    //:}
-    //:if ([self.caloricInTextField isFirstResponder]) {
+
     self.age = [self.ageTextField.text doubleValue];
-    //:}
+
     
     if ((self.weight != 0)&&(self.height != 0)) {
         self.BMI = self.weight/(self.height * self.height);
@@ -121,7 +105,7 @@
         if ((self.BMI > 30)) {
             [self.BMILabel setText:[NSString stringWithFormat:@"BMI: %.1f - Obese", self.BMI]];
         }
-        //:NSLog(@"BMI: %.1f", self.BMI);
+
         if (self.age != 0) {
             Calculations *c=[[Calculations alloc] init];
             ;
