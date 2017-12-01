@@ -9,7 +9,10 @@
 #import "MapViewController.h"
 
 @interface MapViewController ()
-
+@property (nonatomic,strong) MKPlacemark *startLoc;
+@property (nonatomic,strong) MKPlacemark *destLoc;
+@property  CLLocationCoordinate2D startCoord;
+@property CLLocationCoordinate2D userLoc;
 @end
 
 @implementation MapViewController
@@ -17,10 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.location = [[CLLocationManager alloc]init];
+    self.location = [[CLLocationManager alloc] init];
     self.mapView.delegate = self;
     self.location.delegate = self;
+    
     [self.location requestWhenInUseAuthorization];
+    
+    self.mapView.showsUserLocation = YES;
 }
 
 
@@ -29,11 +35,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
-    NSLog(@"User Location = %f, %f", userLocation.coordinate.latitude, userLocation.coordinate.longitude);
-    MKCoordinateRegion region = MKCoordinateRegionMake(userLocation.coordinate,MKCoordinateSpanMake(0.1,0.1));
-    [self.mapView setRegion:region animated:YES];
-}
 
 - (IBAction)mapViewButton:(UIButton *)sender {
 }
