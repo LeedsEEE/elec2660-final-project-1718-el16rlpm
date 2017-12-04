@@ -20,7 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *caloriesBurnedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *weightLostLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *instLabel;
 
 - (IBAction)mapViewButton:(UIButton *)sender;
 - (IBAction)satelliteViewButton:(UIButton *)sender;

@@ -46,7 +46,7 @@
 
 
 - (IBAction)helpButton:(UIButton *)sender {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"How to input information" message:@"Basal Metabolic Rate is how many calories you burn per day while at rest. If you don't know this value, the averages are 1662 kcal for Men, 2000 kcal for Women." preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"How to input information" message:@"In this tab, input your physical information: weight, height, age, and gender. This will calculate your BMI ratio, as well as your BMR (Basal Metabolic Rate - How many calories you consume daily if at rest). This information will be used to calculate your route's caloric deficit, and the weight you would lose." preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
     [self presentViewController:alertController animated:YES completion:nil];
 }

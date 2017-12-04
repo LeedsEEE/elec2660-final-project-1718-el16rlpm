@@ -42,14 +42,22 @@
     self.userLoc = userLocation.coordinate;
     [self.mapView setRegion:region animated:YES];
     
+    MKAnnotationView* userLocationPin = [mapView viewForAnnotation:userLocation];
+    userLocationPin.canShowCallout = NO;
+    
     MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
     [annotation setCoordinate: self.startCoord];
     [self.mapView addAnnotation: annotation];
+    [mapView selectAnnotation:annotation animated:YES];
+    
+    [self.instLabel setText:@"Place any pin at start location"];
 }
+
 
 - (MKAnnotationView *) mapView: (MKMapView *) mapView viewForAnnotation: (id<MKAnnotation>) annotation {
     if ([annotation isKindOfClass:[MKUserLocation class]]) {
         return nil;
+        //:annotation.canShowCallout = 0;
     }
     MKPinAnnotationView *pin = (MKPinAnnotationView *) [self.mapView dequeueReusableAnnotationViewWithIdentifier: @"myPin"];
     if (pin == nil) {
@@ -60,6 +68,7 @@
     //:pin.annotation = annotation;
     pin.animatesDrop = YES;
     pin.draggable = YES;
+    
     
     
     
@@ -76,15 +85,16 @@ didChangeDragState:(MKAnnotationViewDragState)newState
         
         CLLocationCoordinate2D targetLoc = annotationView.annotation.coordinate;
         NSLog(@"Pin dropped at %f,%f", targetLoc.latitude, targetLoc.longitude);
-        
         MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
         annotation.coordinate = targetLoc;
         NSArray *existingpoints = mapView.annotations;
         if ([existingpoints count] == 2){
             self.startCoord = targetLoc;
+            [self.instLabel setText:@"Place any pin at end location"];
             [annotation setCoordinate: self.userLoc];
         }
         if ([existingpoints count] == 3) {
+            [self.instLabel setText:[NSString stringWithFormat:@"Done! Drag any pin if you \nwant a new start location"]];
             [annotation setCoordinate: self.userLoc];
             MKPlacemark *placemarkStart = [[MKPlacemark alloc]initWithCoordinate:self.startCoord addressDictionary:[NSDictionary dictionaryWithObjectsAndKeys:@"",@"", nil] ];
             MKMapItem *sourceItem = [[MKMapItem alloc]initWithPlacemark:placemarkStart];
@@ -122,11 +132,12 @@ didChangeDragState:(MKAnnotationViewDragState)newState
                     [self.timeLabel setText:[NSString stringWithFormat:@"Estimated Time: %.1fmin", 60.00*(rout.distance/1000.00)/7.36]];
                     Calculations *c=[[Calculations alloc] init];
                     [self.caloriesBurnedLabel setText:[NSString stringWithFormat:@"Calories Burned: %.1fkcal", [c getCaloriesBurned: rout.distance]]];
-                    [self.weightLostLabel setText:[NSString stringWithFormat:@"Weight lost per                week if run daily: %.1fkg", [c getWeightLost]]];
+                    [self.weightLostLabel setText:[NSString stringWithFormat:@"Weight lost per                week if run daily: %.2fkg", [c getWeightLost]]];
                     
                 }];
             }];
         }
+        [mapView selectAnnotation:annotation animated:YES];
         [self.mapView addAnnotation:annotation];
         
     }
