@@ -19,10 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    self.weightTextField.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"weightText"];
+    self.heightTextField.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"heightText"];
+    self.ageTextField.text = [[NSUserDefaults standardUserDefaults]objectForKey:@"ageText"];
+    self.genderControl.selectedSegmentIndex = [[NSUserDefaults standardUserDefaults]integerForKey:@"genderSeg"];
+    [self.BMILabel setText:[[NSUserDefaults standardUserDefaults]objectForKey:@"BMIText"]];
+    [self.BMRLabel setText:[[NSUserDefaults standardUserDefaults]objectForKey:@"BMRText"]];
+    
     self.weight = [self.weightTextField.text doubleValue];
     self.height = [self.heightTextField.text doubleValue];
     self.age = [self.ageTextField.text doubleValue];
-
+    
+    Calculations *c=[[Calculations alloc] init];
+    [c setBMR: self.height: self.weight: self.age: self.gender];
+    
+    
 }
 
 
@@ -50,6 +63,12 @@
 
     self.age = [self.ageTextField.text doubleValue];
 
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.weightTextField.text forKey:@"weightText"];
+    [defaults setObject:self.heightTextField.text forKey:@"heightText"];
+    [defaults setObject:self.ageTextField.text forKey:@"ageText"];
+    [defaults setInteger:self.genderControl.selectedSegmentIndex forKey:@"genderSeg"];
+    [defaults synchronize];
     
     if ((self.weight != 0)&&(self.height != 0)) {
         self.BMI = self.weight/(self.height * self.height);
@@ -66,6 +85,8 @@
             [self.BMILabel setText:[NSString stringWithFormat:@"BMI: %.1f - Obese", self.BMI]];
         }
         NSLog(@"BMI: %.1f", self.BMI);
+        [defaults setObject:self.BMILabel.text forKey:@"BMIText"];
+        [defaults synchronize];
     }
     
     [textField resignFirstResponder];
@@ -105,7 +126,7 @@
         if ((self.BMI > 30)) {
             [self.BMILabel setText:[NSString stringWithFormat:@"BMI: %.1f - Obese", self.BMI]];
         }
-
+        
         if (self.age != 0) {
             Calculations *c=[[Calculations alloc] init];
             ;
@@ -113,7 +134,14 @@
             NSLog(@"BMR: %.1f", [c setBMR: self.height: self.weight: self.age: self.gender]);
         }
     }
-    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.weightTextField.text forKey:@"weightText"];
+    [defaults setObject:self.heightTextField.text forKey:@"heightText"];
+    [defaults setObject:self.ageTextField.text forKey:@"ageText"];
+    [defaults setInteger:self.genderControl.selectedSegmentIndex forKey:@"genderSeg"];
+    [defaults setObject:self.BMILabel.text forKey:@"BMIText"];
+    [defaults setObject:self.BMRLabel.text forKey:@"BMRText"];
+    [defaults synchronize];
 }
 
 - (IBAction)genderChanged:(id)sender {
@@ -130,6 +158,12 @@
         [self.BMRLabel setText:[NSString stringWithFormat:@"BMR: %.1f", [c setBMR: self.height: self.weight: self.age: self.gender]]];
         NSLog(@"BMR: %.1f", [c setBMR: self.height: self.weight: self.age: self.gender]);
     }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.weightTextField.text forKey:@"weightText"];
+    [defaults setObject:self.heightTextField.text forKey:@"heightText"];
+    [defaults setObject:self.ageTextField.text forKey:@"ageText"];
+    [defaults setInteger:self.genderControl.selectedSegmentIndex forKey:@"genderSeg"];
+    [defaults synchronize];
 }
 @end
 

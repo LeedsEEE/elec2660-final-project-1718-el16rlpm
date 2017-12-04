@@ -118,8 +118,12 @@ didChangeDragState:(MKAnnotationViewDragState)newState
                      [renderer setLineWidth:5.0];*/
                     NSLog(@"Rout Name : %@",rout.name);
                     NSLog(@"Total Distance (in Meters) :%f",rout.distance);
-                    [self.distanceLabel setText:[NSString stringWithFormat:@"Distance: %.1fm", rout.distance]];
-                    [self.timeLabel setText:[NSString stringWithFormat:@"Estimated Time: %.1fm", 60*rout.distance/7.36]];
+                    [self.distanceLabel setText:[NSString stringWithFormat:@"Distance: %.2fkm", rout.distance/1000.00]];
+                    [self.timeLabel setText:[NSString stringWithFormat:@"Estimated Time: %.1fmin", 60.00*(rout.distance/1000.00)/7.36]];
+                    Calculations *c=[[Calculations alloc] init];
+                    [self.caloriesBurnedLabel setText:[NSString stringWithFormat:@"Calories Burned: %.1fkcal", [c getCaloriesBurned: rout.distance]]];
+                    [self.weightLostLabel setText:[NSString stringWithFormat:@"Weight lost per                week if run daily: %.1fkg", [c getWeightLost]]];
+                    
                 }];
             }];
         }

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "Calculations.h"
+
 
 @interface MapViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
 
@@ -16,6 +18,8 @@
 @property (strong, nonatomic) CLLocationManager *location;
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *caloriesBurnedLabel;
+@property (weak, nonatomic) IBOutlet UILabel *weightLostLabel;
 
 
 - (IBAction)mapViewButton:(UIButton *)sender;

@@ -7,12 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PhysicalViewController.h"
+#import "MapViewController.h"
 
 @interface Calculations : NSObject
 @property float caloriesPerMeter;
-@property float caloriesBurned;
-@property float weightLost;
+@property (readwrite, nonatomic) float weightLost;
 @property float distance;
+@property (readwrite, nonatomic) float BMRVal;
 @property (readwrite, nonatomic) float BMR;
+@property (readwrite, nonatomic) float caloriesBurned;
 - (double)setBMR:(float)height :(float)weight :(float)age :(BOOL)gender;
+- (double)getCaloriesBurned:(float)dist;
+- (double)getWeightLost;
 @end

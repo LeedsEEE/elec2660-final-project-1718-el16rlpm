@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -169,15 +169,34 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-lY-7Fq">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="ZaP-fj-Aa8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estimated time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njh-Oz-wbx">
-                                <frame key="frameInset" minX="9" minY="146" width="174" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njh-Oz-wbx">
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1Kk-yS-L0d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight lost per                week if run daily:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTj-ba-3cY">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="jDg-tl-SS9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories Burned:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXg-Cb-JyX">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -186,29 +205,40 @@
                         <constraints>
                             <constraint firstItem="Qlc-bG-jfh" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="22" id="4dE-fD-Y8Y"/>
                             <constraint firstAttribute="bottomMargin" secondItem="9do-2x-iVd" secondAttribute="bottom" constant="38" id="5ec-3l-SW9"/>
-                            <constraint firstItem="wI8-lY-7Fq" firstAttribute="top" secondItem="Qlc-bG-jfh" secondAttribute="bottom" constant="51" id="Bac-A6-QTu"/>
+                            <constraint firstItem="wI8-lY-7Fq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-6" id="Elv-Yz-kza"/>
                             <constraint firstItem="F5j-4O-YCv" firstAttribute="leading" secondItem="Qlc-bG-jfh" secondAttribute="trailing" constant="45" id="IhV-dO-KlK"/>
+                            <constraint firstItem="wI8-lY-7Fq" firstAttribute="top" secondItem="F5j-4O-YCv" secondAttribute="bottom" constant="24" id="MJk-qP-GnR"/>
+                            <constraint firstItem="wI8-lY-7Fq" firstAttribute="trailing" secondItem="njh-Oz-wbx" secondAttribute="trailing" id="MpL-wA-asD"/>
+                            <constraint firstItem="mXg-Cb-JyX" firstAttribute="leading" secondItem="qTj-ba-3cY" secondAttribute="leading" id="N8P-74-EMb"/>
                             <constraint firstItem="Ka6-2o-9wl" firstAttribute="leading" secondItem="F5j-4O-YCv" secondAttribute="trailing" constant="45" id="OM8-5a-Qo5"/>
-                            <constraint firstItem="wI8-lY-7Fq" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-7" id="YdL-et-ZvN"/>
+                            <constraint firstItem="mXg-Cb-JyX" firstAttribute="top" secondItem="njh-Oz-wbx" secondAttribute="bottom" constant="2" id="RNg-5O-agj"/>
+                            <constraint firstItem="mXg-Cb-JyX" firstAttribute="trailing" secondItem="njh-Oz-wbx" secondAttribute="trailing" id="S9G-qY-f8f"/>
+                            <constraint firstItem="mXg-Cb-JyX" firstAttribute="leading" secondItem="njh-Oz-wbx" secondAttribute="leading" id="SZo-V0-eK5"/>
+                            <constraint firstItem="qTj-ba-3cY" firstAttribute="top" secondItem="mXg-Cb-JyX" secondAttribute="bottom" constant="2" id="bGT-3k-Yc4"/>
                             <constraint firstAttribute="trailing" secondItem="9do-2x-iVd" secondAttribute="trailing" id="g4v-4u-PZl"/>
                             <constraint firstItem="9do-2x-iVd" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="iao-VB-MxW"/>
+                            <constraint firstItem="njh-Oz-wbx" firstAttribute="top" secondItem="wI8-lY-7Fq" secondAttribute="bottom" constant="2" id="ipr-YV-Xfi"/>
                             <constraint firstItem="F5j-4O-YCv" firstAttribute="baseline" secondItem="Ka6-2o-9wl" secondAttribute="baseline" id="lC2-Ay-ifn"/>
                             <constraint firstItem="Ka6-2o-9wl" firstAttribute="leading" secondItem="9do-2x-iVd" secondAttribute="trailing" constant="-125" id="lw2-RH-dcw"/>
+                            <constraint firstItem="mXg-Cb-JyX" firstAttribute="trailing" secondItem="qTj-ba-3cY" secondAttribute="trailing" id="sK2-1H-RGg"/>
                             <constraint firstItem="Qlc-bG-jfh" firstAttribute="baseline" secondItem="F5j-4O-YCv" secondAttribute="baseline" id="uxT-wJ-HVs"/>
+                            <constraint firstItem="wI8-lY-7Fq" firstAttribute="leading" secondItem="njh-Oz-wbx" secondAttribute="leading" id="vJF-h0-XZ4"/>
                             <constraint firstItem="Qlc-bG-jfh" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="59" id="yxu-DM-WIx"/>
                             <constraint firstItem="9do-2x-iVd" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="zDi-Mt-YQd"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map View" image="mapView.png" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="caloriesBurnedLabel" destination="mXg-Cb-JyX" id="dQn-or-Zzk"/>
                         <outlet property="distanceLabel" destination="wI8-lY-7Fq" id="4Uj-ZL-7Fy"/>
                         <outlet property="mapView" destination="9do-2x-iVd" id="gLb-fa-VKg"/>
                         <outlet property="timeLabel" destination="njh-Oz-wbx" id="Bv3-14-yCT"/>
+                        <outlet property="weightLostLabel" destination="qTj-ba-3cY" id="s5r-gP-Onf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+            <point key="canvasLocation" x="748" y="358.4707646176912"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
