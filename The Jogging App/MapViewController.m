@@ -45,7 +45,7 @@
     self.startCoord = userLocation.coordinate;
     self.userLoc = userLocation.coordinate; //set variables for user location
     
-    MKAnnotationView* userLocationPin = [mapView viewForAnnotation:userLocation];
+    //MKAnnotationView* userLocationPin = [mapView viewForAnnotation:userLocation];
     
     
     MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
@@ -150,7 +150,7 @@ didChangeDragState:(MKAnnotationViewDragState)newState
 }
 
 - (IBAction)hybridViewButton:(UIButton *)sender {
-    self.mapView.mapType = MKMapTypeHybrid; //set map to hbrid map
+    self.mapView.mapType = MKMapTypeHybrid; //set map to hybrid map
 }
 
 #pragma mark Renderer properties
