@@ -13,6 +13,7 @@
 		20025ECD1FC85FFB00B59F64 /* mapView.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC71FC85FFB00B59F64 /* mapView.png */; };
 		20025ECE1FC85FFB00B59F64 /* mapView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC81FC85FFB00B59F64 /* mapView@2x.png */; };
 		20025ECF1FC85FFB00B59F64 /* mapView@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20025EC91FC85FFB00B59F64 /* mapView@3x.png */; };
+		200B4EFD1FD7190A002AC8E0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 200B4EFC1FD7190A002AC8E0 /* icon.png */; };
 		203735811FCDB5EB003607CC /* Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 203735801FCDB5EB003607CC /* Calculations.m */; };
 		20BC0EA21FD1B018004BF91B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BC0EA11FD1B018004BF91B /* CoreLocation.framework */; };
 		20BC0EA41FD1B2A6004BF91B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BC0EA31FD1B2A6004BF91B /* MapKit.framework */; };
@@ -51,6 +52,7 @@
 		20025EC71FC85FFB00B59F64 /* mapView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapView.png; sourceTree = "<group>"; };
 		20025EC81FC85FFB00B59F64 /* mapView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapView@2x.png"; sourceTree = "<group>"; };
 		20025EC91FC85FFB00B59F64 /* mapView@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapView@3x.png"; sourceTree = "<group>"; };
+		200B4EFC1FD7190A002AC8E0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		2037357F1FCDB5EB003607CC /* Calculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculations.h; sourceTree = "<group>"; };
 		203735801FCDB5EB003607CC /* Calculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculations.m; sourceTree = "<group>"; };
 		20BC0E9F1FD1B00E004BF91B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -107,6 +109,7 @@
 		20BC0E9D1FD1AD0D004BF91B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				200B4EFC1FD7190A002AC8E0 /* icon.png */,
 				20025EC41FC85FFB00B59F64 /* physicalInfo.png */,
 				20025EC51FC85FFB00B59F64 /* physicalInfo@2x.png */,
 				20025EC61FC85FFB00B59F64 /* physicalInfo@3x.png */,
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20025ECA1FC85FFB00B59F64 /* physicalInfo.png in Resources */,
+				200B4EFD1FD7190A002AC8E0 /* icon.png in Resources */,
 				20025ECB1FC85FFB00B59F64 /* physicalInfo@2x.png in Resources */,
 				20025ECC1FC85FFB00B59F64 /* physicalInfo@3x.png in Resources */,
 				20025ECF1FC85FFB00B59F64 /* mapView@3x.png in Resources */,
