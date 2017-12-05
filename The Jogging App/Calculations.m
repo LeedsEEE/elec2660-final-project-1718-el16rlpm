@@ -27,6 +27,7 @@ float BMRVal = 0.0;
     }
     BMRVal = self.BMR;
     return self.BMR;
+                                            //Method for calculating BMR
 }
 
 float caloriesBurnedVal = 0.0;
@@ -36,9 +37,11 @@ float caloriesBurnedVal = 0.0;
     NSLog(@"cal: %f",self.caloriesBurned);
     caloriesBurnedVal = self.caloriesBurned;
     return self.caloriesBurned;
+                                            //Method for calculating calories burned
 }
 - (double)getWeightLost{
     self.weightLost = (caloriesBurnedVal/7778)*7;
     return self.weightLost;
+                                            //Method for calculating weight lost
 }
 @end
