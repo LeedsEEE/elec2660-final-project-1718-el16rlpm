@@ -5,6 +5,8 @@
 //  Created by Ricardo Pereira Marques da Silva [el16rlpm] on 21/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
+//  Third party frameworks used: Apple CoreLocation and MapKit
+//  Tab bar icons and App icon created using draw.io
 
 #import "MapViewController.h"
 
@@ -44,9 +46,6 @@
     
     self.startCoord = userLocation.coordinate;
     self.userLoc = userLocation.coordinate; //set variables for user location
-    
-    //MKAnnotationView* userLocationPin = [mapView viewForAnnotation:userLocation];
-    
     
     MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
     [annotation setCoordinate: self.startCoord];
